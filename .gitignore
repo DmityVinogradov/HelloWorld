@@ -31,6 +31,9 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+.gitignore
+.gitattributes
+
 ### VS Code ###
 .vscode/
 

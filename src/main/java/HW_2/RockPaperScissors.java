@@ -1,3 +1,5 @@
+package HW_2;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -5,6 +7,7 @@ public class RockPaperScissors {
     public static void main(String[] args) {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
+        RPS prs;
         System.out.println("Start Game: Press Enter");
         System.out.println("Game over: press Q");
         RPS[] rps = RPS.values();
@@ -17,11 +20,11 @@ public class RockPaperScissors {
                 System.out.println("Вася показывает: " + rps[Vasya]);
                 System.out.println("Петя показывает: " + rps[Petya]);
                 if ((Vasya == 0 && Petya == 1) || (Vasya == 1 && Petya == 2)
-                        || (Vasya == 2 && Petya == 0) ){
+                        || (Vasya == 2 && Petya == 0)) {
                     System.out.println("Вася выйграл!");
-                } else if (Vasya == Petya){
+                } else if (Vasya == Petya) {
                     System.out.println("Ничья!");
-                }else {
+                } else {
                     System.out.println("Петя выйграл!");
                 }
             } else {
@@ -29,7 +32,4 @@ public class RockPaperScissors {
             }
         }
     }
-    public static enum RPS {Камень,
-        Ножницы,
-        Бумага}
 }
