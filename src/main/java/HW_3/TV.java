@@ -1,9 +1,9 @@
 package HW_3;
 
 public class TV {
-    private String brand;
-    private int screenSize;
-    private boolean smartTV;
+    private final String brand;
+    private final int screenSize;
+    private final boolean smartTV;
 
     public TV(String brand, int screenSize, boolean smartTV) {
         this.brand = brand;
