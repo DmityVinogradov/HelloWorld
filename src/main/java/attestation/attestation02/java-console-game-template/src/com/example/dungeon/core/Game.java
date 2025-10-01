@@ -186,7 +186,6 @@ public class Game {
             throw new InvalidCommandException("Нет пути в направлении " + direction);
         }
 
-        // Проверка для ангара - смотрим, есть ли ангар среди соседей
         if (direction.equalsIgnoreCase("hangar")) {
             boolean hasKey = false;
             for (Item item : ctx.getPlayer().getInventory()) {
