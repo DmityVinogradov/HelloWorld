@@ -27,7 +27,7 @@ public class App {
             checkSourceDatabase(props);
 
             // Мигрируем в целевую базу
-            runFlywayMigrations(props);
+//            runFlywayMigrations(props);
 
             // Работаем с целевой базой
             connectToDatabase(props);
