@@ -1,4 +1,8 @@
-package HW_8.src;
+package HW_8.src.test;
+
+import HW_8.src.service.FileHandler;
+import HW_8.src.model.Car;
+import HW_8.src.repository.CarsRepositoryImpl;
 
 import java.io.IOException;
 import java.util.List;
@@ -7,10 +11,10 @@ public class Main {
     public static void main(String[] args) {
         try {
             // Чтение данных из файла
-            List<Car> cars = FileHandler.readCarsFromFile("input.txt");
+            List<Car> cars = FileHandler.readCarsFromFile("Cars.txt");
 
             // Создание репозитория и добавление автомобилей
-            CarRepository repository = new CarRepository();
+            CarsRepositoryImpl repository = new CarsRepositoryImpl();
             for (Car car : cars) {
                 repository.addCar(car);
             }

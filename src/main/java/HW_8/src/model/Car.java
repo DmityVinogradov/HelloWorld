@@ -1,4 +1,4 @@
-package HW_8.src;
+package HW_8.src.model;
 
 public class Car {
     private String number;
